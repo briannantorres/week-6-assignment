@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Midterm</title>
+<style>
+  *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    width: 100%;
+    height: 650px;
+    border: 1px solid black;
+    margin: 0 auto;
+    background-image: url("./images/Background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  main{}
+  div.container{
+    border: 1px solid #000000;
+  }
+  div.left, div.middle, div.right{
+    border: 1px dotted black;
+    width: 33.3%;
+    float: left;
+  }
+  aside img{
+    width: 100%
+  }
+  aside{
+  display: flex;
+  justify-content: space-between;
+}
+#mainContent{
+  width: 900px
+  margin: 0 auto;
+  text-align: left;
+  padding: 0;
+  height: 100%;
+}
+.section{
+  width: 400px;
+  float: left;
+  margin-right: 40px:
+  background-repeat: no-repeat;
+  position: relative;
+}
+  header{
+      opacity: 80%;
+      text-align: center;
+      h1{
+        color: white;
+      }
+      h2{
+        color: white;
+      }
+  }
+  nav{
+    background-color: #888888;
+    background-position: center;
+    position: center;
+    opacity: 70%;
+    text-align: center;
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    li{
+      a{
+        color: white;
+      }
+    } 
+  }
+  main{
+    color: white;
+  }
+  ul{
+    text-align: center;
+  }
+  li{
+    display: inline-block;
+    width: 150px;
+    border: 2px dotted white;
+    line-height: 3em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+  }
+  .slideshow{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    min-height: 300px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+    .slideshow a{
+      flex-basis: auto;
+  }
+  .cycle-slideshow img{
+    max-width: 280px;
+    width: 100%;
+  }
+  .cycle-slideshow img{
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  a{
+    color: aliceblue;
+    text-decoration: none;
+    display: block; 
+
+  }
+  footer{
+    color: white;
+    opacity: 70%;}
+</style>
+</head>
+
+<body>
+  <div id="mainContent">
+  <div class="container">
+    <header>
+      <h1>☆Art Portfolio☆</h1>
+      <h2>Brianna's Midterm</h2>
+    </header>
+    <nav>
+      <ul>
+        <li>
+          <a href="#">Art</a>
+        </li>
+        <li>
+          <a href="#">Design</a>
+        </li>
+        <li>
+          <a href="#">Animation</a>
+        </li>
+        <li>
+          <a href="#">Music</a>
+        </li>
+        <li>
+          <a href="#">About</a>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+
+      <div class="slideshow">
+       <div class="cycle-slideshow">
+        <img src="images/image.jpeg">
+        <img src="images/IMG_1512.jpeg">
+        <img src="images/IMG_1516.jpeg">
+       </div>
+      </div>
+<div class="center">
+    <a href=# id="prev">Prev</a> 
+    <a href=# id="next">Next</a>
+</div>
+    </main>
+    <footer>
+</footer>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="https://malsup.github.io/jquery.cycle2.js"></script>
+</div>
+</body>
+</html>
